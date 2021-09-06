@@ -1,0 +1,12 @@
+<h1>{{capitalize pokemonName }}</h1>
+<img src="{{pokemonImg}}" alt="{{ pokemonName }} Image" />
+
+<h2>Type(s) :</h2>
+<ul>
+    {{#each pokemonType}}
+    <li>{{capitalize this.type.name}}</li>
+    {{/each}}
+</ul>
+
+<h2>Weight: {{ pokemonWeight }} lbs</h2>
+<h2>Height: {{ pokemonHeight }} ''</h2>
